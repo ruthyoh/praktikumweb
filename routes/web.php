@@ -33,3 +33,23 @@ Route::get('/welcome', function() {
 Route::get('/listbarang/{id}/{nama}', function ($id, $nama) {
     return view('list_barang', compact('id', 'nama'));
 });
+
+
+Route::get('/menu', function () {
+    $items = [
+        ['id' => 1, 'name' => 'Beras Pandan Wangi', 'harga' => 15000],
+        ['id' => 2, 'name' => 'Tepung Terigu', 'harga' => 20000],
+        ['id' => 3, 'name' => 'Bagon Cair', 'harga' => 11500],
+        ['id' => 4, 'name' => 'Penyedap Rasa', 'harga' => 12000],
+        ['id' => 5, 'name' => 'Minyak Goreng', 'harga' => 14000],
+    ];
+    return view('menu', compact('items'));
+});
+
+Route::get('/mobil', function () {
+    return view('mobil');
+});
+
+
+
+
