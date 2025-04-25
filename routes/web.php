@@ -41,6 +41,6 @@ Route::get('/mobil', function () {
     return view('mobil');
 });
 
-
-
+// Route untuk menampilkan detail produk (optional ID)
+Route::get('/listproduct', [ProductController::class, 'listProduct']);
 
