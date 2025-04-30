@@ -16,7 +16,7 @@
     <!-- Main Content -->
     <main class="container mx-auto mt-10 px-4">
         <div class="bg-white shadow-md rounded-lg p-6">
-            <h2 class="text-xl font-semibold mb-4">@yield('page_title', 'Judul Halaman')</h2>
+            <h2 class="text-xl font-semibold mb-4">@yield('page_title', 'Web Mobil')</h2>
             @yield('content')
         </div>
     </main>

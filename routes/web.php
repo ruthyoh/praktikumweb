@@ -44,3 +44,7 @@ Route::get('/mobil', function () {
 // Route untuk menampilkan detail produk (optional ID)
 Route::get('/listproduct', [ProductController::class, 'listProduct']);
 
+
+Route::get('/home', function () {
+    return view('pages/home');
+});
