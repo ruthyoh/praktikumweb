@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
 use App\Http\Controllers\DataController;
+use App\Http\Controllers\ListProdukController;
 
 Route::get('/', [HomeController::class, 'index']);
 
@@ -48,3 +49,4 @@ Route::get('/listproduct', [ProductController::class, 'listProduct']);
 Route::get('/home', function () {
     return view('pages/home');
 });
+Route::get('/listproduk', [ListProdukController::class, 'show']);
